@@ -1,0 +1,1 @@
+puts Place.all.inspect
