@@ -1,9 +1,7 @@
-<%= form_with model: @places do |form| %>
+<%= form_with model: @place do |form| %>
   <p>
     <%= form.label "name", "Name" %>
     <%= form.text_field "name" %>
-    <%= form.label "date", "Date" %>
-    <%= form.date_field "date" %>
   </p>
     <%= form.submit %>
 <% end %>
