@@ -1,17 +1,25 @@
 
 
-<h2><%= @place.name %></h2>
-<h3> Posts </h3>
+<h1><%= @place.name %></h1>
+
 
 <ul>
   <% for post in @place.posts %>
-    <li><%= "#{post.title}, #{post.posted_on}, #{post.description}" %></li>
+  <p><h2><%= "#{post.title}" %></h2> </p>
+  
+  <p><h6><%= "#{post.posted_on}" %></h6> </p>
+  
+  <p><h4><%= "#{post.description}" %> </h4> </p>
+
   <% end %>
 </ul>
 
 
+
+
 <a href="/posts/new?place_id=<%=@place.id%>"> Create new post
 
+<p> <a href="/places"> Back to list of places visited </p>
 
 
 
