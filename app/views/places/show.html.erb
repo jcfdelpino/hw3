@@ -3,6 +3,13 @@
 <h2><%= @place.name %></h2>
 <h3> Posts </h3>
 
+<ul>
+  <% for post in @place.posts %>
+    <li><%= "#{post.title}, #{post.posted_on}, #{post.description}" %></li>
+  <% end %>
+</ul>
+
+
 <a href="/posts/new?place_id=<%=@place.id%>"> Create new post
 
 
